@@ -1,0 +1,42 @@
+{
+  "name": "bnvd/bnvd-client",
+  "description": "Cliente oficial para a API do Banco Nacional de Vulnerabilidades Cibernéticas (BNVD)",
+  "version": "1.0.0",
+  "type": "library",
+  "keywords": [
+    "security",
+    "vulnerabilities",
+    "cve",
+    "api-client",
+    "bnvd"
+  ],
+  "homepage": "https://bnvd.org",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "BNVD Team",
+      "email": "contato@bnvd.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "BNVD\\": "src/"
+    },
+    "files": [
+      "BNVDClient.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BNVD\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable"
+}
